@@ -46,12 +46,10 @@ bibliography: paper.bib
 
 Covid-19 Virtual BioHackathon 2020 hosts many ongoing projects on workflows about either for the development of the existing ones or combining two or more of them for better functioning.Some of these workflows are Galaxy Project, INSaFLU and nf-core. In these pipelines, the inputs are genome sequence reads mostly coming from Illumina but also Oxford Nanopore, which are analyzed through these workflows by branching whether it is single end or paired end, as output, the annotated variant lists including single nucleotide polymorphisms (SNPs) and small insertion deletion (indel) are provided. We compared published variants by Galaxy project with produced variants by INSaFLU workflow in the course of our study.
 
-\begin{itemize}[
-\item{galaxyproject/SARS-CoV-2}
+* item{galaxyproject/SARS-CoV-2
 Galaxy, a scientific community and open-source platform, provides workflows, datasets and histories enabling accessibility, reproducibility, and transparency in computational biology, mostly for genomic research [@nekrutenko2020no]. In Galaxy Projects, there are many workflows including genomic sequence assembly, variant calling, In this study, we used galaxyproject/SARS-CoV-2 workflow proposed by Galaxy community and this workflow will be named as “Galaxy workflow” in the latter part of this report. Steps of Galaxy workflow for variant analysis include mapping with BWA (for paired end data) or bowtie2 (for single end data), filtering steps, variant calling with lofreq and annotation with SnpEff, to choose a variant calling algorithm for the workflow, they compared FreeBayes, Mutec2 and lofreq, and based on the results, they used lofreq in the workflow.
-\item{INSaFLU}
+* INSaFLU
 INSaFLU has been originally developed as a web-based platform for influenza-based bioinformatics analysis and authors suggest that it can be also used for rapid assessment of variants for the novel coronavirus SARS-CoV-2 [@borges2018insaflu]. In order to determine variant positions, it uses bwa for mapping, samtools and FreeBayes algorithms for variant calling and SnpEff for variant annotation. The INSaFLU interface provides many features which are gene and whole-genome consensus sequences, phylogenetic trees, as well as gene, protein and genome alignments. Besides, it shares annotated variant files.
-\end{itemize}
 
 Taking into account the impact of the differences in analysis steps of different workflows [@baichoo2018developing],our
 project for Covid-19 Virtual BioHackathon 2020 aimed to compare variants determined by the INSaFLU workflow for the same samples that have been analyzed with the Galaxy workflow between 20.03.2020 and 02.04.2020. For this purpose, the Illumina reads were retrieved from the SRA database, then all samples were uploaded to the INSaFLU interface and workflow was run with updated reference genome NC045512.2. The resulting variants were used to detect the shared and unique variants in two different workflows. In the final step, some general properties of the variants were analyzed.
@@ -100,10 +98,11 @@ The comparison of variants from different workflows can be enriched by adding an
 
 As a result of possible effects of non-synonymous mutations on protein structures and functions, the non-synonymous variants would be interesting to analyze in further studies. These variants could be analyzed in detail to see their possible phenotypic effects on the virus pathogenicity or virus-host interaction. Moreover, it could be highly beneficial to model the effects of non-synonymous mutations at protein structure level. Conformational changes within protein structures resulting from such variants could be illustrated via protein modeling and possible functional changes could be further examined. Modeling of proteins which take part in host infection and host-virus interaction could be useful, since computer aided drug design techniques enable modeling and synthesis of antiviral drugs that could have inhibitory effects on such proteins  [@klimenko2017computer]. These drugs could be utilized to block host-virus interaction or viral replication pathways and further contribute to decrease the levels of viral infection on the host.
 
+# GitHub Repository
+
+The repository contains the supplementary material [online][https://github.com/rsgturkeygroup3/BioHackathon]
 # Acknowledgements
 
 We would like to express our very great appreciation to the organization team of Covid-19 Virtual BioHackathon 2020 for enabling us to take part in the help for COVID-19 pandemic. Also special thanks to RSG Turkey representatives for their assistance.
 
 # References
-
-paper.bib
