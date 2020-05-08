@@ -48,17 +48,13 @@ Covid-19 Virtual BioHackathon 2020 hosts many ongoing projects on workflows abou
 
 \begin{itemize}[
 \item{galaxyproject/SARS-CoV-2}
-
 Galaxy, a scientific community and open-source platform, provides workflows, datasets and histories enabling accessibility, reproducibility, and transparency in computational biology, mostly for genomic research [@nekrutenko2020no]. In Galaxy Projects, there are many workflows including genomic sequence assembly, variant calling, In this study, we used galaxyproject/SARS-CoV-2 workflow proposed by Galaxy community and this workflow will be named as “Galaxy workflow” in the latter part of this report. Steps of Galaxy workflow for variant analysis include mapping with BWA (for paired end data) or bowtie2 (for single end data), filtering steps, variant calling with lofreq and annotation with SnpEff, to choose a variant calling algorithm for the workflow, they compared FreeBayes, Mutec2 and lofreq, and based on the results, they used lofreq in the workflow.
-
 \item{INSaFLU}
-
 INSaFLU has been originally developed as a web-based platform for influenza-based bioinformatics analysis and authors suggest that it can be also used for rapid assessment of variants for the novel coronavirus SARS-CoV-2 [@borges2018insaflu]. In order to determine variant positions, it uses bwa for mapping, samtools and FreeBayes algorithms for variant calling and SnpEff for variant annotation. The INSaFLU interface provides many features which are gene and whole-genome consensus sequences, phylogenetic trees, as well as gene, protein and genome alignments. Besides, it shares annotated variant files.
-
 \end{itemize}
 
 Taking into account the impact of the differences in analysis steps of different workflows [@baichoo2018developing],our
-project for Covid-19 Virtual BioHackathon 2020 aimed to compare variants determined by the INSaFLU workflow for the same samples that have been analyzed with the Galaxy workflow between 20.03.2020 and 02.04.2020. For this purpose, the Illumina reads were retrieved from the SRA database, then all samples were uploaded to the INSaFLU interface and workflow was run with updated reference genome NC045512.2. The resulting variants were used to detect the shared and unique variants in two different workflows. In the final step, some general properties of the variants were analyzed. 
+project for Covid-19 Virtual BioHackathon 2020 aimed to compare variants determined by the INSaFLU workflow for the same samples that have been analyzed with the Galaxy workflow between 20.03.2020 and 02.04.2020. For this purpose, the Illumina reads were retrieved from the SRA database, then all samples were uploaded to the INSaFLU interface and workflow was run with updated reference genome NC045512.2. The resulting variants were used to detect the shared and unique variants in two different workflows. In the final step, some general properties of the variants were analyzed.
 
 # Results 
 
