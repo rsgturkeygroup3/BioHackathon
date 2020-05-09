@@ -39,16 +39,17 @@ affiliations:
 date: 19 April 2020
 bibliography: paper.bib
 ---
+
 # Introduction
 
 Covid-19 Virtual BioHackathon 2020 hosts many ongoing projects on workflows about either for the development of the existing ones or combining two or more of them for better functioning.Some of these workflows are Galaxy Project, INSaFLU and nf-core. In these pipelines, the inputs are genome sequence reads mostly coming from Illumina but also Oxford Nanopore, which are analyzed through these workflows by branching whether it is single end or paired end, as output, the annotated variant lists including single nucleotide polymorphisms (SNPs) and small insertion deletion (indel) are provided. We compared published variants by Galaxy project with produced variants by INSaFLU workflow in the course of our study.
 
 \begin{itemize}
-\item 
-## galaxyproject/SARS-CoV-2
+\item galaxyproject/SARS-CoV-2
+
 Galaxy, a scientific community and open-source platform, provides workflows, datasets and histories enabling accessibility, reproducibility, and transparency in computational biology, mostly for genomic research [@nekrutenko2020no]. In Galaxy Projects, there are many workflows including genomic sequence assembly, variant calling, In this study, we used galaxyproject/SARS-CoV-2 workflow proposed by Galaxy community and this workflow will be named as “Galaxy workflow” in the latter part of this report. Steps of Galaxy workflow for variant analysis include mapping with BWA (for paired end data) or bowtie2 (for single end data), filtering steps, variant calling with lofreq and annotation with SnpEff, to choose a variant calling algorithm for the workflow, they compared FreeBayes, Mutec2 and lofreq, and based on the results, they used lofreq in the workflow.
-\item 
-## INSaFLU
+\item INSaFLU
+
 INSaFLU has been originally developed as a web-based platform for influenza-based bioinformatics analysis and authors suggest that it can be also used for rapid assessment of variants for the novel coronavirus SARS-CoV-2 [@borges2018insaflu]. In order to determine variant positions, it uses bwa for mapping, samtools and FreeBayes algorithms for variant calling and SnpEff for variant annotation. The INSaFLU interface provides many features which are gene and whole-genome consensus sequences, phylogenetic trees, as well as gene, protein and genome alignments. Besides, it shares annotated variant files.
 \end{itemize}
 
