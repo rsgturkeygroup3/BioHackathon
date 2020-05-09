@@ -2,6 +2,12 @@
 title: 'Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject/SARS-CoV-2 workflows'
 tags:
   - COVID-19
+  - galaxyproject
+  - INSaFLU
+  - SARS-CoV-2
+  - variant calling
+  - workflow
+  - Covid-19 Virtual BioHackathon 2020
 authors:
   - name: Nazlı Sıla Kara
     affiliation: 1
@@ -94,7 +100,7 @@ As a result of possible effects of non-synonymous mutations on protein structure
 
 # GitHub Repository
 
-The repository contains the supplementary material \href{online}{https://github.com/rsgturkeygroup3/BioHackathon}
+The [repository](https://github.com/rsgturkeygroup3/BioHackathon) contains the supplementary material.
 # Acknowledgements
 
 We would like to express our very great appreciation to the organization team of Covid-19 Virtual BioHackathon 2020 for enabling us to take part in the help for COVID-19 pandemic. Also special thanks to RSG Turkey representatives for their assistance.
