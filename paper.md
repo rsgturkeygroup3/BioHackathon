@@ -1,13 +1,7 @@
 ---
-title: 'Comparison of SARS-CoV-2 variants withINSaFLU and galaxyproject/SARS-CoV-2workflows'
+title: 'Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject/SARS-CoV-2 workflows'
 tags:
   - COVID-19
-  - galaxyproject
-  - INSaFLU
-  - SARS-CoV-2
-  - variant calling
-  - workflow
-  - Covid-19 Virtual BioHackathon 2020
 authors:
   - name: Nazlı Sıla Kara
     affiliation: 1
@@ -18,12 +12,10 @@ authors:
   - name: Funda Yılmaz
     affiliation: 4
   - name: Elif Bozlak
-    affiliation: 5, 6
+    affiliation: 5,6
   - name: Evrim Fer
     affiliation: 7
-
 affiliations:
-
   - name: Department of Medical Biochemistry, Faculty of Medicine, Istinye University, Istanbul,Turkey
     index: 1
   - name: Department of Biological Sciences, Middle East Technical University, Ankara, Turkey
@@ -38,9 +30,7 @@ affiliations:
     index: 6
   - name: Department of Genetics, University of Arizona, Tucson, USA
     index: 7
-
 date: 19 April 2020
-
 bibliography: paper.bib
 ---
 
