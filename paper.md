@@ -101,7 +101,7 @@ As a result of possible effects of non-synonymous mutations on protein structure
 
 # GitHub Repository
 
-The repository contains the supplementary material [online][https://github.com/rsgturkeygroup3/BioHackathon]
+The repository contains the supplementary material [https://github.com/rsgturkeygroup3/BioHackathon]
 
 # Acknowledgements
 
