@@ -1,5 +1,5 @@
 ---
-title: 'Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject'
+title: 'Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject/SARS-CoV-2'
 tags:
   - COVID-19
   - galaxyproject
